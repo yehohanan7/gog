@@ -8,3 +8,6 @@
 ## Run test under cursor: M-x gog-run-test
 
 ![alt text](https://raw.githubusercontent.com/yehohanan7/gog/master/gog-test.gif "Logo Title Text 1")
+
+
+## Re-run last test: M-x gog-run-last-test

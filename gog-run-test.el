@@ -11,6 +11,12 @@
   (interactive)
   (let ((package (gog-current-package))
         (test-name (gog-test-name)))
-    (shell-command (format "go test %s -run %s" package test-name))))
+    (setq gog-run-test-command (format "go test %s -run %s" package test-name))
+    (shell-command gog-run-test-command)))
+
+(defun gog-run-last-test ()
+  (interactive)
+  (shell-command gog-run-test-command))
+
 
 (provide 'gog-run-test)
